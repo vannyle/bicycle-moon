@@ -1,0 +1,29 @@
+.advantages {
+  padding-top: 150px;
+  padding-bottom: 130px;
+}
+
+.advantages__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 38px;
+}
+
+.advantages__item {
+  text-align: center;
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  letter-spacing: -1.27273px;
+  color: $color-accent-primary;
+}

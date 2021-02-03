@@ -1,0 +1,22 @@
+.intro {
+  padding-top: 120px;
+  padding-bottom: 480px;
+  margin-bottom: 98px;
+  color: $color-tertiary;
+  background-color: $color-additional;
+}
+
+.intro__title {
+  color: $color-tertiary;
+  margin-bottom: 20px;
+}
+
+.intro__description {
+  font-weight: 300;
+  line-height: 28px;
+  max-width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.005em;
+  color: rgba($color-tertiary, 0.7);
+}

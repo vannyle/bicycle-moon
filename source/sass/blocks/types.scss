@@ -1,0 +1,24 @@
+.types {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: $color-quaternary;
+}
+
+.types__title {
+  margin-bottom: 60px;
+}
+
+.types__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+.types__image {
+  margin-bottom: 20px;
+}
+
+.types__name {
+  display: block;
+  text-align: center;
+}

@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-bold.woff2") format("woff2"), url("../fonts/opensans-bold.woff2") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-semibold.woff2") format("woff2"), url("../fonts/opensans-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-regular.woff2") format("woff2"), url("../fonts/opensans-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/opensans-light.woff2") format("woff2"), url("../fonts/opensans-light.woff2") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+}
+
+html,
+body {
+  color: $color-secondary;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $color-tertiary;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  color: $color-primary;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type="text"],
+input[type="tel"] {
+  padding: 14px 29px 10px;
+  width: 100%;
+  background: $color-tertiary;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 24px;
+
+  ::placeholder {
+    color: rgba(#1c1c1c, 0.5);
+  }
+}
+
+.container {
+  position: relative;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,72 @@
+.hero {
+  padding-top: 320px;
+  padding-bottom: 240px;
+  color: $color-tertiary;
+  background-color: $color-additional;
+  background-image: url("../../img/hero/background-image-desktop@1x.jpg");
+  background-position: top center;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/hero/background-image-desktop@2x.jpg");
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  max-width: 880px;
+  justify-content: space-between;
+}
+
+.hero__intro {
+  max-width: 395px;
+  margin-right: 172px;
+}
+
+.hero__logo {
+  margin-bottom: 30px;
+}
+
+.hero__title {
+  margin-bottom: 24px;
+}
+
+.hero__description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: rgba($color-tertiary, 0.8);
+  mix-blend-mode: normal;
+}
+
+.hero__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__form-title {
+  width: 100%;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -0.005em;
+}
+
+.hero__input {
+  margin-bottom: 20px;
+}
+
+.hero__button {
+  padding: 15px 0 15px;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 600;
+  color: $color-secondary;
+  background-color: $color-accent-primary;
+  border-radius: 6px;
+  outline: none;
+  border: none;
+}
