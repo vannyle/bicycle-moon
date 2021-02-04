@@ -10,25 +10,51 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/hero/background-image-desktop@2x.jpg");
   }
+
+  @include lg-down {
+    padding-top: 134px;
+    margin-bottom: 413px;
+    background-image: url("../../img/hero/background-image-tablet@1x.jpg");
+  }
 }
 
 .hero__wrapper {
   display: flex;
   max-width: 880px;
   justify-content: space-between;
+
+  @include lg-down {
+    flex-direction: column;
+  }
 }
 
 .hero__intro {
   max-width: 395px;
   margin-right: 172px;
+
+  @include lg-down {
+    max-width: initial;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 
 .hero__logo {
+  display: block;
   margin-bottom: 30px;
+
+  @include lg-down {
+    display: none;
+  }
 }
 
 .hero__title {
   margin-bottom: 24px;
+
+  @include lg-down {
+    margin-bottom: 20px;
+  }
 }
 
 .hero__description {
@@ -38,11 +64,25 @@
   letter-spacing: -0.005em;
   color: rgba($color-tertiary, 0.8);
   mix-blend-mode: normal;
+
+  @include lg-down {
+    max-width: 435px;
+    margin-bottom: 80px;
+    font-size: 18px;
+    line-height: 32px;
+  }
 }
 
 .hero__form {
   display: flex;
   flex-direction: column;
+
+  @include lg-down {
+    max-width: 321px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -620px;
+  }
 }
 
 .hero__form-title {
@@ -53,6 +93,11 @@
   line-height: 28px;
   text-align: center;
   letter-spacing: -0.005em;
+
+  @include lg-down {
+    margin-bottom: 30px;
+    color: $color-secondary;
+  }
 }
 
 .hero__input {

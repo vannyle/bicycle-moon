@@ -1,15 +1,22 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+document.addEventListener("DOMContentLoaded", function () {
+  const navMain = document.querySelector('.header__nav');
+  const navToggle = document.querySelector('.header__toggle');
 
-pageHeader.classList.remove('page-header--nojs');
+  navToggle.classList.remove('header__toggle--nojs');
+  navMain.classList.remove('header__nav--nojs');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('header__nav--close')) {
+      navMain.classList.remove('header__nav--close');
+      navMain.classList.add('header__nav--open');
+      navToggle.classList.remove('header__toggle--close');
+      navToggle.classList.add('header__toggle--open')
+    } else {
+      navMain.classList.remove('header__nav--open');
+      navMain.classList.add('header__nav--close');
+      navToggle.classList.remove('header__toggle--open');
+      navToggle.classList.add('header__toggle--close')
+    }
+  });
 });
+

@@ -1,4 +1,28 @@
 .footer {
   display: flex;
   justify-content: center;
+  margin-bottom: 98px;
+
+  @include lg-down {
+    margin-bottom: 53px;
+  }
+}
+
+.footer__item {
+  display: flex;
+  align-items: center;
+  margin-right: 90px;
+  color: rgba($color-secondary, 0.5);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.footer__icon {
+  margin-right: 15px;
+
+  &--phone {
+    fill: none;
+  }
 }

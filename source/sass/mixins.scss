@@ -1,0 +1,17 @@
+@mixin lg-down {
+  @media only screen and (max-width: $breakpoint-lg-down) {
+    @content;
+  }
+}
+
+@mixin md-down {
+  @media only screen and (max-width: $breakpoint-md-down) {
+    @content;
+  }
+}
+
+@mixin sm-down {
+  @media only screen and (max-width: $breakpoint-sm-down) {
+    @content;
+  }
+}

@@ -16,12 +16,32 @@
   <include src="build/img/sprite_auto.svg"></include>
 </div>
 <header class="header container">
-  <nav>
+  <svg class="header__logo" width="68" height="20">
+    <use xlink:href="#icon-logo"></use>
+  </svg>
+  <button class="header__toggle header__toggle--close">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <nav class="header__nav header__nav--close header__nav--nojs">
     <ul class="header__menu">
-      <li><a class="header__link" href="#">О нас</a></li>
-      <li><a class="header__link" href="#">Виды велосипедов</a></li>
-      <li><a class="header__link" href="#">Видео про велосипеды</a></li>
-      <li><a class="header__link" href="#">Контакты</a></li>
+      <li class="header__item">
+        <a class="header__link" href="#">О нас</a>
+        <span class="header__arrow"></span>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Виды велосипедов</a>
+        <span class="header__arrow"></span>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Видео про велосипеды</a>
+        <span class="header__arrow"></span>
+      </li>
+      <li class="header__item">
+        <a class="header__link" href="#">Контакты</a>
+        <span class="header__arrow"></span>
+      </li>
     </ul>
   </nav>
 </header>
@@ -70,74 +90,115 @@
   </section>
   <section class="types">
     <div class="container">
-    <h2 class="types__title">Виды велосипедов</h2>
-    <div class="types__list">
-      <div class="types__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-1@1x.webp 1x, img/types/bicycle-desktop-1@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-1@1x.webp 1x, img/types/bicycle-tablet-1@2x.webp 2x">
+      <h2 class="types__title">Виды велосипедов</h2>
+      <div class="types__list">
+        <div class="types__item">
+          <div class="types__image-wrapper types__image-wrapper--1">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-1@1x.webp 1x, img/types/bicycle-desktop-1@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-1@1x.webp 1x, img/types/bicycle-tablet-1@2x.webp 2x">
 
-          <source media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-1@1x.png 1x, img/types/bicycle-desktop-1@2x.png 2x">
-          <source media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-1@1x.png 1x, img/types/bicycle-tablet-1@2x.png 2x">
-          <img class="types__image" src="img/types/bicycle-tablet-1@1x.png"
-               srcset="img/types/bicycle-tablet-1@2x.png 2x" width="270" height="300" alt="Питание кота">
-        </picture>
-        <span class="types__name">Дорожный велосипед</span>
-      </div>
-      <div class="types__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-2@1x.webp 1x, img/types/bicycle-desktop-2@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-2@1x.webp 1x, img/types/bicycle-tablet-2@2x.webp 2x">
+              <source media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-1@1x.png 1x, img/types/bicycle-desktop-1@2x.png 2x">
+              <source media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-1@1x.png 1x, img/types/bicycle-tablet-1@2x.png 2x">
+              <img class="types__image" src="img/types/bicycle-desktop-1@1x.png"
+                   srcset="img/types/bicycle-desktop-1@2x.png 2x" width="342" height="503" alt="Дорожный велосипед">
+            </picture>
+          </div>
+          <span class="types__name">Дорожный велосипед</span>
+        </div>
+        <div class="types__item">
+          <div class="types__image-wrapper types__image-wrapper--2">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-2@1x.webp 1x, img/types/bicycle-desktop-2@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-2@1x.webp 1x, img/types/bicycle-tablet-2@2x.webp 2x">
 
-          <source media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-2@1x.png 1x, img/types/bicycle-desktop-2@2x.png 2x">
-          <source media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-2@1x.png 1x, img/types/bicycle-tablet-2@2x.png 2x">
-          <img class="types__image" src="img/types/bicycle-tablet-2@1x.png"
-               srcset="img/types/bicycle-tablet-2@2x.png 2x" width="270" height="300" alt="Питание кота">
-        </picture>
-        <span class="types__name">Горный велосипед</span>
-      </div>
-      <div class="types__item">
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-3@1x.webp 1x, img/types/bicycle-desktop-3@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-3@1x.webp 1x, img/types/bicycle-tablet-3@2x.webp 2x">
+              <source media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-2@1x.png 1x, img/types/bicycle-desktop-2@2x.png 2x">
+              <source media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-2@1x.png 1x, img/types/bicycle-tablet-2@2x.png 2x">
+              <img class="types__image" src="img/types/bicycle-desktop-2@1x.png"
+                   srcset="img/types/bicycle-desktop-2@2x.png 2x" width="342" height="566" alt="Горный велосипед">
+            </picture>
+          </div>
+          <span class="types__name">Горный велосипед</span>
+        </div>
+        <div class="types__item">
+          <div class="types__image-wrapper types__image-wrapper--3">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-3@1x.webp 1x, img/types/bicycle-desktop-3@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-3@1x.webp 1x, img/types/bicycle-tablet-3@2x.webp 2x">
 
-          <source media="(min-width: 1024px)"
-                  srcset="img/types/bicycle-desktop-3@1x.png 1x, img/types/bicycle-desktop-3@2x.png 2x">
-          <source media="(max-width: 768px)"
-                  srcset="img/types/bicycle-tablet-3@1x.png 1x, img/types/bicycle-tablet-3@2x.png 2x">
-          <img class="types__image" src="img/types/bicycle-tablet-3@1x.png"
-               srcset="img/types/bicycle-tablet-3@2x.png 2x" width="270" height="300" alt="Питание кота">
-        </picture>
-        <span class="types__name">Детский велосипед</span>
+              <source media="(min-width: 1024px)"
+                      srcset="img/types/bicycle-desktop-3@1x.png 1x, img/types/bicycle-desktop-3@2x.png 2x">
+              <source media="(max-width: 1023px)"
+                      srcset="img/types/bicycle-tablet-3@1x.png 1x, img/types/bicycle-tablet-3@2x.png 2x">
+              <img class="types__image" src="img/types/bicycle-desktop-3@1x.png"
+                   srcset="img/types/bicycle-desktop-3@2x.png 2x" width="342" height="513" alt="Детский велосипед">
+            </picture>
+          </div>
+          <span class="types__name">Детский велосипед</span>
+        </div>
       </div>
-    </div>
     </div>
   </section>
   <section class="intro">
-    <div class="container">
-    <h2 class="intro__title">Видео про велосипеды</h2>
-    <p class="intro__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя. </p>
+    <div class="intro__wrapper container">
+      <h2 class="intro__title">Видео про велосипеды</h2>
+      <p class="intro__description">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="intro__video-wrapper">
+        <picture>
+          <source type="image/webp" media="(min-width: 767px) and (max-width: 1023px)"
+                  srcset="img/intro/bicycle-video-tablet@1x.webp 1x, img/intro/bicycle-video-tablet@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 320px)"
+                  srcset="img/intro/bicycle-video-mobile@1x.webp 1x, img/intro/bicycle-video-mobile@2x.webp 2x">
+
+          <source media="(min-width: 767px) and (max-width: 1023px)"
+                  srcset="img/intro/bicycle-video-tablet@1x.png 1x, img/intro/bicycle-video-tablet@2x.png .png 2x">
+          <source media="(max-width: 320px)"
+                  srcset="img/intro/bicycle-video-mobile@1x.png 1x, img/intro/bicycle-video-mobile@2x.png 2x">
+          <img class="intro__video" src="img/intro/bicycle-video-desktop@1x.png"
+               srcset="img/intro/bicycle-video-desktop@2x.png 2x" width="929" height="522" alt="Видео про велосипеды">
+        </picture>
+        <button class="intro__play" type="button">
+          <svg width="65" height="65">
+            <use xlink:href="#icon-play"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </section>
   <section class="contact container">
     <h2 class="contact__title">Как нас найти?</h2>
     <p class="contact__description">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
-    <div>Map</div>
+    <div class="contact__map">
+      <iframe class="contact__map-item"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2slt!4v1585834926363!5m2!1sru!2slt"
+              width="957" height="530" style="border: 0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+      </iframe>
+    </div>
   </section>
   <footer class="footer container">
-      <a href="mailto:puteshestviemechta@gmail.ru"><span>puteshestviemechta@gmail.ru</span></a>
-      <a href="tel:+749978468446">+7 (499) -784-684-46</a>
+    <a class="footer__item" href="mailto:puteshestviemechta@gmail.ru">
+      <svg class="footer__icon" width="26" height="20">
+        <use xlink:href="#icon-email"></use>
+      </svg>
+      <span>puteshestviemechta@gmail.ru</span>
+    </a>
+    <a class="footer__item" href="tel:+749978468446">
+      <svg class="footer__icon footer__icon--phone" width="17" height="24">
+        <use xlink:href="#icon-phone"></use>
+      </svg>
+      <span>+7 (499) -784-684-46</span></a>
   </footer>
 </main>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -2,18 +2,31 @@
   padding-top: 151px;
   margin-bottom: 39px;
   text-align: center;
+
+  @include lg-down {
+    padding-top: 65px;
+    max-width: 698px;
+    margin-bottom: 20px;
+  }
 }
 
 .contact__title {
   margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .contact__description {
   max-width: 555px;
   margin-left: auto;
+  margin-bottom: 41px;
   font-weight: 400;
   font-size: 17px;
   line-height: 31px;
   color: rgba($color-secondary, 0.7);
   margin-right: auto;
+}
+
+.contact__map-item {
+  width: 698px;
+  height: 545px;
 }
