@@ -1,9 +1,9 @@
 // Media queries
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
-$breakpoint-lg-down: 1024px;
-$breakpoint-md-down: 768px;
-$breakpoint-sm-down: 320px;
+$breakpoint-lg-down: 1024px - 0.02px;
+$breakpoint-md-down: 768px - 0.02px;
+$breakpoint-sm-down: 320px - 0.02px;
 
 // Color
 $color-primary: #1f1f1f;

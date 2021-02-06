@@ -12,9 +12,15 @@
   }
 
   @include lg-down {
-    padding-top: 134px;
+    padding-top: 135px;
+    padding-bottom: 205px;
     margin-bottom: 413px;
     background-image: url("../../img/hero/background-image-tablet@1x.jpg");
+  }
+
+  @include md-down {
+    padding-top: 120px;
+    background-image: url("../../img/hero/background-image-mobile@1x.jpg");
   }
 }
 
@@ -30,13 +36,17 @@
 
 .hero__intro {
   max-width: 395px;
-  margin-right: 172px;
+  margin-right: 158px;
 
   @include lg-down {
     max-width: initial;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+  }
+
+  @include md-down {
+    margin-bottom: 62px;
   }
 }
 
@@ -81,7 +91,11 @@
     max-width: 321px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: -620px;
+    margin-bottom: -548px;
+  }
+
+  @include md-down {
+    margin-bottom: -566px;
   }
 }
 
@@ -97,6 +111,11 @@
   @include lg-down {
     margin-bottom: 30px;
     color: $color-secondary;
+    font-size: 18px;
+  }
+
+  @include md-down {
+    margin-bottom: 17px;
   }
 }
 

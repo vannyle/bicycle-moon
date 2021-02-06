@@ -50,6 +50,7 @@ body {
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -105,6 +106,14 @@ input[type="tel"] {
   font-family: inherit;
   line-height: 24px;
 
+  @include lg-down {
+    padding: 12px 20px 10px;
+  }
+
+  @include md-down {
+    padding: 12px 25px 10px;
+  }
+
   ::placeholder {
     color: rgba(#1c1c1c, 0.5);
   }
@@ -115,4 +124,9 @@ input[type="tel"] {
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;
+
+  @include md-down {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

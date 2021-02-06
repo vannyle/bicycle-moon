@@ -1,18 +1,31 @@
 .contact {
   padding-top: 151px;
-  margin-bottom: 39px;
+  margin-bottom: 31px;
   text-align: center;
 
   @include lg-down {
-    padding-top: 65px;
+    padding-top: 58px;
     max-width: 698px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+  }
+
+  @include md-down {
+    margin-bottom: 25px;
+    padding-top: 21px;
   }
 }
 
 .contact__title {
   margin-bottom: 30px;
   line-height: 30px;
+
+  @include lg-down {
+    margin-bottom: 20px;
+  }
+
+  @include md-down {
+    font-size: 18px;
+  }
 }
 
 .contact__description {
@@ -24,9 +37,29 @@
   line-height: 31px;
   color: rgba($color-secondary, 0.7);
   margin-right: auto;
+
+  @include lg-down {
+    max-width: initial;
+    margin-bottom: 20px;
+  }
+}
+
+.contact__map {
+  @include md-down {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
 
 .contact__map-item {
-  width: 698px;
-  height: 545px;
+  @include lg-down {
+    max-width: 698px;
+    height: 545px;
+  }
+
+  @include md-down {
+    max-width: initial;
+    width: 100%;
+    height: 250px;
+  }
 }

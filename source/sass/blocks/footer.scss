@@ -1,21 +1,35 @@
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 98px;
+  max-width: 570px;
 
   @include lg-down {
     margin-bottom: 53px;
+  }
+
+  @include md-down {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .footer__item {
   display: flex;
   align-items: center;
-  margin-right: 90px;
   color: rgba($color-secondary, 0.5);
 
-  &:last-child {
+  @include md-down {
+    margin-bottom: 22px;
     margin-right: 0;
+  }
+
+  &:last-child {
+    margin-right: 22px;
+
+    @include md-down {
+      margin-bottom: 0;
+    }
   }
 }
 

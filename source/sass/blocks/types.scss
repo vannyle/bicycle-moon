@@ -1,16 +1,24 @@
 .types {
   padding-top: 150px;
-  padding-bottom: 150px;
+  padding-bottom: 148px;
   background-color: $color-quaternary;
 
   @include lg-down {
     padding-top: 50px;
     padding-bottom: 70px;
   }
+
+  @include md-down {
+    padding-bottom: 53px;
+  }
 }
 
 .types__title {
   margin-bottom: 60px;
+
+  @include lg-down {
+    margin-bottom: 29px;
+  }
 }
 
 .types__list {
@@ -26,6 +34,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  @include md-down {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .types__item {
@@ -37,11 +50,15 @@
       margin-bottom: 0;
     }
   }
+
+  @include md-down {
+    margin-bottom: 43px;
+  }
 }
 
 .types__image-wrapper {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   &::before,
   &::after {
@@ -63,8 +80,13 @@
         height: 127px;
         top: initial;
         left: -37px;
-        bottom: -28px;
+        bottom: -23px;
         border: 18px solid $color-accent-primary;
+      }
+
+      @include md-down {
+        left: -25px;
+        bottom: -24px;
       }
     }
 
@@ -75,6 +97,12 @@
   }
 
   &--2 {
+    margin-top: 30px;
+
+    @include lg-down {
+      margin-top: 0;
+    }
+
     &::before,
     &::after {
       width: 47px;
@@ -93,12 +121,18 @@
     }
 
     &::after {
-      bottom: -23px;
+      bottom: -17px;
       right: -23px;
     }
   }
 
   &--3 {
+    margin-top: -10px;
+
+    @include lg-down {
+      margin-top: 0;
+    }
+
     &::before {
       width: 95px;
       height: 95px;
@@ -114,6 +148,11 @@
         height: 68px;
         border: 13px solid $color-accent-primary;
       }
+
+      @include md-down {
+        top: -21px;
+        right: -14px;
+      }
     }
   }
 }
@@ -121,10 +160,8 @@
 .types__name {
   display: block;
   text-align: center;
-
-  @include lg-down {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 34px;
-  }
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: -0.5px;
 }

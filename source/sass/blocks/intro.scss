@@ -7,6 +7,10 @@
   @include lg-down {
     padding-top: 70px;
   }
+
+  @include md-down {
+    padding-top: 85px;
+  }
 }
 
 .intro__wrapper {
@@ -19,12 +23,16 @@
   color: $color-tertiary;
   margin-bottom: 20px;
   line-height: 30px;
+
+  @include md-down {
+    align-self: flex-start;
+  }
 }
 
 .intro__description {
   font-weight: 300;
   line-height: 28px;
-  max-width: 340px;
+  max-width: 325px;
   margin-bottom: 56px;
   letter-spacing: -0.005em;
   color: rgba($color-tertiary, 0.7);
@@ -34,15 +42,23 @@
     margin-bottom: 40px;
     text-align: center;
   }
+
+  @include md-down {
+    margin-bottom: 51px;
+  }
 }
 
 .intro__video-wrapper {
   position: relative;
-  margin-bottom: -100px;
+  margin-bottom: -103px;
 
   @include lg-down {
-    margin-bottom: -85px;
+    margin-bottom: -90px;
     max-width: 503px;
+  }
+
+  @include md-down {
+    margin-bottom: -54px;
   }
 }
 
@@ -55,4 +71,18 @@
   cursor: pointer;
   outline: none;
   border: none;
+
+  @include lg-down {
+    svg {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  @include md-down {
+    svg {
+      width: 65px;
+      height: 65px;
+    }
+  }
 }
