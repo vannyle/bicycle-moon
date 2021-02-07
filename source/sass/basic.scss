@@ -94,33 +94,7 @@ ul {
   list-style-type: none;
 }
 
-input[type="text"],
-input[type="tel"] {
-  padding: 14px 29px 10px;
-  width: 100%;
-  background: $color-tertiary;
-  border: 1px solid #c9ccd4;
-  box-sizing: border-box;
-  border-radius: 4px;
-  font-size: 15px;
-  font-family: inherit;
-  line-height: 24px;
-
-  @include lg-down {
-    padding: 12px 20px 10px;
-  }
-
-  @include md-down {
-    padding: 12px 25px 10px;
-  }
-
-  ::placeholder {
-    color: rgba(#1c1c1c, 0.5);
-  }
-}
-
 .container {
-  position: relative;
   max-width: 1170px;
   margin-right: auto;
   margin-left: auto;

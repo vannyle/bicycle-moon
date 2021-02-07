@@ -12,6 +12,7 @@
   }
 
   @include lg-down {
+    position: relative;
     padding-top: 135px;
     padding-bottom: 205px;
     margin-bottom: 413px;
@@ -55,7 +56,13 @@
   margin-bottom: 30px;
 
   @include lg-down {
-    display: none;
+    position: absolute;
+    top: 25px;
+    left: 21px;
+  }
+
+  @include md-down {
+    left: 17px;
   }
 }
 
@@ -121,6 +128,27 @@
 
 .hero__input {
   margin-bottom: 20px;
+  padding: 14px 29px 10px;
+  width: 100%;
+  background: $color-tertiary;
+  border: 1px solid #c9ccd4;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 15px;
+  font-family: inherit;
+  line-height: 24px;
+
+  @include lg-down {
+    padding: 12px 20px 10px;
+  }
+
+  @include md-down {
+    padding: 12px 25px 10px;
+  }
+
+  ::placeholder {
+    color: rgba(#1c1c1c, 0.5);
+  }
 }
 
 .hero__button {

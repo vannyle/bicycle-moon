@@ -1,5 +1,5 @@
 {
-  "name": "Liga-A-start-template",
+  "name": "bycicle-mooon",
   "version": "1.0.0",
   "description": "Стартовый шаблон сборки Лиги А",
   "devDependencies": {
@@ -50,6 +50,7 @@
     "node": "8.15"
   },
   "dependencies": {
-    "del": "^4.1.1"
+    "del": "^4.1.1",
+    "normalize.css": "^8.0.1"
   }
 }

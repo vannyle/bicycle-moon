@@ -1,4 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
+'use strict';
+document.addEventListener('DOMContentLoaded', function () {
   const navMain = document.querySelector('.header__nav');
   const navToggle = document.querySelector('.header__toggle');
   const header = document.querySelector('.header');
@@ -39,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
       const link = headerItem.querySelector('a[href^="#section"]');
       let ref = link.href.split('#section');
-      ref = "#section" + ref[1];
+      ref = '#section' + ref[1];
       window.scroll({
         behavior: 'smooth',
         left: 0,
@@ -49,4 +50,3 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-
