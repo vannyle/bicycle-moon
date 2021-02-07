@@ -23,10 +23,6 @@
   color: $color-tertiary;
   margin-bottom: 20px;
   line-height: 30px;
-
-  @include md-down {
-    align-self: flex-start;
-  }
 }
 
 .intro__description {

@@ -149,6 +149,10 @@
         border: 13px solid $color-accent-primary;
       }
 
+      @media only screen and (max-width: 1190px) {
+        right: -20px;
+      }
+
       @include md-down {
         top: -21px;
         right: -14px;
