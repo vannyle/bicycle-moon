@@ -54,6 +54,7 @@
 .hero__logo {
   display: block;
   margin-bottom: 30px;
+  cursor: pointer;
 
   @include lg-down {
     position: absolute;
@@ -161,4 +162,10 @@
   border-radius: 6px;
   outline: none;
   border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #1eead7;
+  }
 }
