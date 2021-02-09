@@ -11,18 +11,26 @@
     padding-top: 22px;
     padding-bottom: 83px;
   }
-}
 
-.advantages__title {
-  margin-bottom: 50px;
-  text-align: center;
+  h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.005em;
+    color: $color-primary;
 
-  @include lg-down {
-    margin-bottom: 34px;
-  }
+    @include lg-down {
+      font-size: 24px;
+      line-height: 41px;
+      margin-bottom: 34px;
+    }
 
-  @include md-down {
-    margin-bottom: 30px;
+
+    @include md-down {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -30,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 38px;
+  list-style-type: none;
 
   @include lg-down {
     grid-template-columns: repeat(2, 1fr);

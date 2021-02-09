@@ -19,24 +19,11 @@
 
 .header__nav {
   @include lg-down {
-    .header__menu {
-      max-width: initial;
-      justify-content: flex-start;
-      flex-direction: column;
-      border-bottom: none;
-      background-color: $color-tertiary;
-    }
-
     &--open {
       position: fixed;
       top: 0;
       width: 100vw;
       overflow: hidden;
-
-      .header__menu {
-        height: 100vh;
-        padding: 100px 0 0;
-      }
     }
 
     &--close {
@@ -48,11 +35,20 @@
       display: block;
       border-bottom: none;
       width: 100vw;
-
-      .header__menu {
-        padding: 20px 0 0;
-      }
     }
+  }
+}
+
+.header__nav--open .header__menu {
+  @include lg-down {
+    height: 100vh;
+    padding: 100px 0 0;
+  }
+}
+
+.header__nav--nojs .header__menu {
+  @include lg-down {
+    padding: 20px 0 0;
   }
 }
 
@@ -99,16 +95,19 @@
   }
 }
 
-.header__toggle--close span,
-.header__toggle--open span {
+.header__toggle span,
+.header__toggle::before,
+.header__toggle::after {
   display: none;
 
   @include lg-down {
     position: absolute;
     display: block;
     left: 50%;
+    content: "";
     width: 22.5px;
     height: 1px;
+    text-indent: -9999px;
     background: $color-primary;
     border-radius: 2px;
     transform: translateX(-50%) rotate(0deg);
@@ -116,30 +115,30 @@
   }
 }
 
-.header__toggle--close span:nth-child(1) {
+.header__toggle--close span {
   top: 19px;
 }
 
-.header__toggle--close span:nth-child(2) {
+.header__toggle--close::before {
   top: 25px;
 }
 
-.header__toggle--close span:nth-child(3) {
+.header__toggle--close::after {
   top: 31px;
 }
 
-.header__toggle--open span:nth-child(1) {
+.header__toggle--open span {
   width: 25px;
   top: 25px;
   transform: translateX(-50%) rotate(135deg);
 }
 
-.header__toggle--open span:nth-child(2) {
+.header__toggle--open::before {
   opacity: 0;
   top: 25px;
 }
 
-.header__toggle--open span:nth-child(3) {
+.header__toggle--open::after {
   width: 25px;
   top: 25px;
   transform: translateX(-50%) rotate(-135deg);
@@ -169,6 +168,15 @@
   margin-right: auto;
   padding: 20px 20px 10px;
   border-bottom: 1px solid rgba($color-tertiary, 0.2);
+  list-style-type: none;
+
+  @include lg-down {
+    max-width: initial;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-bottom: none;
+    background-color: $color-tertiary;
+  }
 }
 
 .header__link {
@@ -189,6 +197,7 @@
   border-width: 0 2px 2px 0;
   padding: 4px;
   transform: rotate(-45deg);
+  vertical-align: middle;
 
   @include lg-down {
     display: inline-block;

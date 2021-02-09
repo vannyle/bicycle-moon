@@ -53,33 +53,6 @@ body {
   scroll-behavior: smooth;
 }
 
-h1 {
-  font-size: 46px;
-  line-height: 64px;
-  letter-spacing: -0.005em;
-  font-weight: 700;
-  color: $color-tertiary;
-
-  @include lg-down {
-    font-size: 30px;
-    line-height: 42px;
-  }
-}
-
-h2 {
-  text-align: center;
-  font-weight: 600;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.005em;
-  color: $color-primary;
-
-  @include lg-down {
-    font-size: 24px;
-    line-height: 41px;
-  }
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -88,10 +61,6 @@ img {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .container {

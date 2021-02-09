@@ -13,34 +13,41 @@
     margin-bottom: 25px;
     padding-top: 21px;
   }
-}
 
-.contact__title {
-  margin-bottom: 30px;
-  line-height: 30px;
+  h2 {
+    margin-bottom: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: -0.005em;
+    color: $color-primary;
 
-  @include lg-down {
-    margin-bottom: 20px;
+    @include lg-down {
+      margin-bottom: 20px;
+      font-size: 24px;
+      line-height: 41px;
+    }
+
+    @include md-down {
+      font-size: 18px;
+    }
   }
 
-  @include md-down {
-    font-size: 18px;
-  }
-}
+  p {
+    max-width: 555px;
+    margin-left: auto;
+    margin-bottom: 41px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    color: rgba($color-secondary, 0.7);
+    margin-right: auto;
 
-.contact__description {
-  max-width: 555px;
-  margin-left: auto;
-  margin-bottom: 41px;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 31px;
-  color: rgba($color-secondary, 0.7);
-  margin-right: auto;
-
-  @include lg-down {
-    max-width: initial;
-    margin-bottom: 20px;
+    @include lg-down {
+      max-width: initial;
+      margin-bottom: 20px;
+    }
   }
 }
 

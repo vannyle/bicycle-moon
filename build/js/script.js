@@ -37,16 +37,15 @@ document.addEventListener('DOMContentLoaded', function () {
   header.addEventListener('click', (e) => {
     let headerItem = e.target.closest('.header__item');
     if (headerItem) {
+      e.preventDefault();
       closeMenu();
       const link = headerItem.querySelector('a[href^="#section"]');
       let ref = link.href.split('#section');
       ref = '#section' + ref[1];
-      window.scroll({
-        behavior: 'smooth',
-        left: 0,
-        // top gets the distance from the top of the page of our target element
-        top: document.querySelector(ref).offsetTop
-      });
+
+      setTimeout(() => {
+        document.querySelector(ref).scrollIntoView();
+      }, 100);
     }
   });
 });

@@ -49,6 +49,37 @@
   @include md-down {
     margin-bottom: 62px;
   }
+
+  h1 {
+    margin-bottom: 24px;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -0.005em;
+    font-weight: 700;
+    color: $color-tertiary;
+
+    @include lg-down {
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 42px;
+    }
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    color: rgba($color-tertiary, 0.8);
+    mix-blend-mode: normal;
+
+    @include lg-down {
+      max-width: 435px;
+      margin-bottom: 80px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
 }
 
 .hero__logo {
@@ -67,30 +98,6 @@
   }
 }
 
-.hero__title {
-  margin-bottom: 24px;
-
-  @include lg-down {
-    margin-bottom: 20px;
-  }
-}
-
-.hero__description {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 32px;
-  letter-spacing: -0.005em;
-  color: rgba($color-tertiary, 0.8);
-  mix-blend-mode: normal;
-
-  @include lg-down {
-    max-width: 435px;
-    margin-bottom: 80px;
-    font-size: 18px;
-    line-height: 32px;
-  }
-}
-
 .hero__form {
   display: flex;
   flex-direction: column;
@@ -105,25 +112,26 @@
   @include md-down {
     margin-bottom: -566px;
   }
-}
 
-.hero__form-title {
-  width: 100%;
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.005em;
+  h2 {
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.005em;
+    color: $color-tertiary;
 
-  @include lg-down {
-    margin-bottom: 30px;
-    color: $color-secondary;
-    font-size: 18px;
-  }
+    @include lg-down {
+      margin-bottom: 30px;
+      color: $color-secondary;
+      font-size: 18px;
+    }
 
-  @include md-down {
-    margin-bottom: 17px;
+    @include md-down {
+      margin-bottom: 17px;
+    }
   }
 }
 
