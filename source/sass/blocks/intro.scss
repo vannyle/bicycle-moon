@@ -5,11 +5,12 @@
   background-color: $color-additional;
 
   @include lg-down {
-    padding-top: 70px;
+    padding-top: 65px;
   }
 
   @include md-down {
-    padding-top: 85px;
+    padding-top: 80px;
+    margin-bottom: 93px;
   }
 }
 
@@ -28,8 +29,13 @@
     letter-spacing: -0.005em;
 
     @include lg-down {
+      margin-bottom: 15px;
       font-size: 24px;
       line-height: 41px;
+    }
+
+    @include md-down {
+      margin-bottom: 14px;
     }
   }
 

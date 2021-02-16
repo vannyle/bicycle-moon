@@ -26,18 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.position = 'relative';
   }
 
-  navToggle.addEventListener('click', function () {
-    if (navMain.classList.contains('header__nav--close')) {
-      openMenu();
-    } else {
-      closeMenu();
-    }
-  });
-
-  header.addEventListener('click', (e) => {
+  function scrollToSectionHandler(e) {
     let headerItem = e.target.closest('.header__item');
     if (headerItem) {
-      e.preventDefault();
       closeMenu();
       const link = headerItem.querySelector('a[href^="#section"]');
       let ref = link.href.split('#section');
@@ -47,5 +38,15 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelector(ref).scrollIntoView();
       }, 100);
     }
+  }
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('header__nav--close')) {
+      openMenu();
+    } else {
+      closeMenu();
+    }
   });
+
+  header.addEventListener('click', scrollToSectionHandler, {passive: true});
 });

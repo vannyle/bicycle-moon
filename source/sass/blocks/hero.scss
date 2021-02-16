@@ -1,6 +1,6 @@
 .hero {
   padding-top: 320px;
-  padding-bottom: 240px;
+  padding-bottom: 238px;
   color: $color-tertiary;
   background-color: $color-additional;
   background-image: url("../../img/hero/background-image-desktop@1x.jpg");
@@ -21,6 +21,7 @@
 
   @include md-down {
     padding-top: 120px;
+    padding-bottom: 203px;
     background-image: url("../../img/hero/background-image-mobile@1x.jpg");
   }
 }
@@ -47,7 +48,7 @@
   }
 
   @include md-down {
-    margin-bottom: 62px;
+    margin-bottom: 57px;
   }
 
   h1 {
@@ -84,7 +85,7 @@
 
 .hero__logo {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   cursor: pointer;
 
   @include lg-down {
@@ -110,12 +111,13 @@
   }
 
   @include md-down {
-    margin-bottom: -566px;
+    margin-bottom: -564px;
   }
 
   h2 {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+    margin-top: 3px;
     font-weight: 600;
     font-size: 17px;
     line-height: 28px;
@@ -130,7 +132,7 @@
     }
 
     @include md-down {
-      margin-bottom: 17px;
+      margin-bottom: 20px;
     }
   }
 
@@ -168,7 +170,6 @@
   color: $color-secondary;
   background-color: $color-accent-primary;
   border-radius: 6px;
-  outline: none;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s;

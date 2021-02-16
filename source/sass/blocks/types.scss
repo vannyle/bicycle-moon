@@ -29,7 +29,7 @@
   }
 
   @include md-down {
-    padding-bottom: 53px;
+    padding-bottom: 52px;
   }
 
   h2 {
@@ -45,6 +45,10 @@
       margin-bottom: 29px;
       font-size: 24px;
       line-height: 41px;
+    }
+
+    @include md-down {
+      margin-bottom: 30px;
     }
   }
 }
@@ -185,10 +189,6 @@
         width: 68px;
         height: 68px;
         border: 13px solid $color-accent-primary;
-      }
-
-      @media only screen and (max-width: 1190px) {
-        right: -20px;
       }
 
       @include md-down {

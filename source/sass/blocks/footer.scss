@@ -11,6 +11,7 @@
   @include md-down {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 51px;
   }
 }
 
@@ -19,16 +20,25 @@
   align-items: center;
   color: rgba($color-secondary, 0.5);
 
+  @include lg-down {
+    margin-left: 6px;
+  }
+
   @include md-down {
     margin-bottom: 22px;
-    margin-right: 0;
   }
 
   &:last-child {
     margin-right: 22px;
 
+    @include lg-down {
+      margin-left: 0;
+      margin-right: 17px;
+    }
+
     @include md-down {
       margin-bottom: 0;
+      margin-right: 9px;
     }
   }
 }
