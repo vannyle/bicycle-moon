@@ -3,6 +3,7 @@
   justify-content: space-between;
   margin-bottom: 98px;
   max-width: 570px;
+  flex-wrap: wrap;
 
   @include lg-down {
     margin-bottom: 53px;
@@ -39,6 +40,14 @@
     @include md-down {
       margin-bottom: 0;
       margin-right: 9px;
+    }
+  }
+
+  span {
+    transition: color 0.2s;
+
+    &:hover {
+      color: $color-accent-primary;
     }
   }
 }

@@ -38,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 38px;
+  row-gap: 35px;
   list-style-type: none;
 
   @include lg-down {

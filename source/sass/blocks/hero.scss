@@ -148,6 +148,11 @@
     font-family: inherit;
     line-height: 24px;
 
+    &:hover {
+      outline-offset: -1px;
+      outline: rgb(77, 144, 254) auto 5px;
+    }
+
     @include lg-down {
       padding: 12px 20px 10px;
     }
